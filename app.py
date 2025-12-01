@@ -5,6 +5,7 @@ import pandas as pd
 PIPE_PATH = "tfidf_logreg_pipeline.pkl"
 LE_PATH   = "label_encoder.pkl"
 
+
 @st.cache_resource
 def load_model():
     with open(PIPE_PATH, "rb") as f:
